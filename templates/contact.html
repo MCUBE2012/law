@@ -3,7 +3,62 @@
 {% block content %}
 
 <h3>
-    
+    <form action ='{{url_for("thankyou")}}'>
+  <div class="container-fluid">
+			<div class="row my-5">
+				<p class="text-center text-primary h2 mb-5">Our Location</p>
+				</div>
+				<div class="col-md-6 my-2 p-4">
+					<p class="fs-3 fw-bold">Contact</p>
+					<p>I am open for any suggestion or just to have a chat</p>
+					<div class="row">
+						<div class="col-6">
+							<input
+								type="text"
+								class="form-control form-control-sm"
+								id="exampleFormControlInput1"
+								placeholder="Name"
+                                name="name"
+							/>
+						</div>
+						<div class="col-6">
+							<input
+								type="email"
+								class="form-control form-control-sm"
+								id="exampleFormControlInput1"
+								placeholder="name@example.com"
+                                name="email"
+							/>
+						</div>
+					</div>
+					<div class="my-3">
+						<input
+							type="text"
+							class="form-control form-control-sm"
+							id="exampleFormControlInput1"
+							placeholder="Subject"
+                            name="subject"
+						/>
+					</div>
+					<div class="mb-3">
+						<textarea
+							placeholder="create message here...."
+							class="form-control form-control-sm"
+							id="exampleFormControlTextarea1"
+							rows="5"
+                            name="message"
+						></textarea>
+					</div>
+					<input
+						class="btn btn-primary btn-sm"
+						type="submit"
+						value="Submit"
+					/>
+				</div>
+			</div>
+            </div>
+		</div>
+    </form>
 </h3>
 
 
